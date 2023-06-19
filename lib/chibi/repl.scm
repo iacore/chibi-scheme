@@ -463,7 +463,7 @@
        (make-prompt
         make-prompt:
         (lambda (module)
-          (string-append (if module (write-to-string module) "") "> ")))
+          (string-append "#;" (if module (write-to-string module) "") "> ")))
        (history-file
         history-file:
         (string-append (get-environment-variable "HOME")
